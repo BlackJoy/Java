@@ -1,0 +1,4 @@
+10.12.28.135:8080/japi/coop/selfchange/business/bankinfo/exportExcel?startTime=2017-07-20 10:30:00&endTime=2017-07-21 11:00:00
+
+//按天统计数量
+SELECT DATE_FORMAT(create_time,'%Y%m%d') days,COUNT(id) COUNT FROM business_self_bankcard_change GROUP BY days; 
